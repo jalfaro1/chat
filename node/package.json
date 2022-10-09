@@ -4,6 +4,12 @@
   "description": "Realtime communication",
   "dependencies": {
     "express": "^4.10.2",
-    "socket.io": "^1.2.1"
-  }
+    "socket.io": "^3.0.0",
+    "@snyk/protect": "latest"
+  },
+  "scripts": {
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
+  },
+  "snyk": true
 }
